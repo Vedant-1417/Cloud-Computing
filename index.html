@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Tech Usage Habits Survey</title>
+</head>
+<body>
+
+    <h2>Student Tech Usage Habits Survey</h2>
+
+    <p>
+        This survey aims to understand students' technology usage habits in their
+        academic and personal lives. Your responses are anonymous and will be used
+        for educational purposes only.
+    </p>
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Device -->
+        <label for="device">1. What device do you use most for studying?</label><br>
+        <input type="text" id="device" name="device"><br><br>
+
+        <!-- Multiple Choice -->
+        <label>2. Which cloud productivity tool do you use most often?</label><br>
+
+        <input type="radio" name="tool" value="Google Docs"> Google Docs<br>
+        <input type="radio" name="tool" value="Microsoft 365"> Microsoft 365<br>
+        <input type="radio" name="tool" value="Notion"> Notion<br>
+        <input type="radio" name="tool" value="GitHub"> GitHub<br>
+        <input type="radio" name="tool" value="Dropbox"> Dropbox<br><br>
+
+        <!-- Checkboxes -->
+        <label>3. Which cloud platforms have you heard of? (Select all that apply)</label><br>
+
+        <input type="checkbox" name="platform" value="Google Workspace"> Google Workspace<br>
+        <input type="checkbox" name="platform" value="Microsoft 365"> Microsoft 365<br>
+        <input type="checkbox" name="platform" value="Notion"> Notion<br>
+        <input type="checkbox" name="platform" value="GitHub"> GitHub<br>
+        <input type="checkbox" name="platform" value="Dropbox"> Dropbox<br><br>
+
+        <!-- Dropdown -->
+        <label for="frequency">4. How often do you use cloud-based tools?</label><br>
+
+        <select id="frequency" name="frequency">
+            <option>Multiple times a day</option>
+            <option>Once a day</option>
+            <option>A few times a week</option>
+            <option>Once a week</option>
+            <option>Rarely</option>
+            <option>Never</option>
+        </select>
+        <br><br>
+
+        <!-- Linear Scale -->
+        <label for="rating">5. Rate your comfort with cloud collaboration tools (1-5):</label><br>
+
+        <input type="range" id="rating" name="rating" min="1" max="5">
+        <br>
+        <small>1 = Not Comfortable | 5 = Very Comfortable</small>
+        <br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
