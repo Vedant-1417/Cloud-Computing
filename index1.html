@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Tech Usage Habits Survey</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:750px;
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:8px;
+    font-size:32px;
+}
+
+.creator{
+    text-align:center;
+    color:#555;
+    margin-bottom:20px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.creator span{
+    color:#ff4d6d;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.question{
+    margin-bottom:22px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 10px rgba(13,110,253,.3);
+}
+
+.options{
+    background:#f7f9fc;
+    padding:15px;
+    border-radius:10px;
+}
+
+.options label{
+    font-weight:400;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+input[type=range]{
+    width:100%;
+    accent-color:#0d6efd;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:25px;
+}
+
+button{
+    border:none;
+    padding:13px 30px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+    margin:5px;
+}
+
+.submit{
+    background:#0d6efd;
+    color:white;
+}
+
+.submit:hover{
+    background:#084ec1;
+    transform:scale(1.05);
+}
+
+.reset{
+    background:#ff4d6d;
+    color:white;
+}
+
+.reset:hover{
+    background:#d6336c;
+    transform:scale(1.05);
+}
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    color:#888;
+    font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>📱 Student Tech Usage Habits Survey</h1>
+
+<div class="creator">
+    Created by <span>Vedant Malwankar</span>
+</div>
+
+<p>
+Help us understand how students use technology and cloud-based tools in their daily studies.
+Your responses are confidential and will only be used for academic purposes.
+</p>
+
+<form>
+
+<div class="question">
+<label>👤 Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+</div>
+
+<div class="question">
+<label>📧 Email Address</label>
+<input type="email" placeholder="example@gmail.com">
+</div>
+
+<div class="question">
+<label>🎓 Course / Class</label>
+<input type="text" placeholder="e.g. BCA Semester 3">
+</div>
+
+<div class="question">
+<label>💻 Which device do you use most for studying?</label>
+<select required>
+<option value="">Select One</option>
+<option>Laptop</option>
+<option>Desktop Computer</option>
+<option>Tablet</option>
+<option>Smartphone</option>
+</select>
+</div>
+
+<div class="question">
+<label>☁ Which cloud platform do you use the most?</label>
+
+<div class="options">
+<label><input type="radio" name="cloud"> Google Workspace</label>
+<label><input type="radio" name="cloud"> Microsoft 365</label>
+<label><input type="radio" name="cloud"> Notion</label>
+<label><input type="radio" name="cloud"> GitHub</label>
+<label><input type="radio" name="cloud"> Dropbox</label>
+</div>
+
+</div>
+
+<div class="question">
+<label>✅ Which cloud platforms have you used? (Select all that apply)</label>
+
+<div class="options">
+<label><input type="checkbox"> Google Workspace</label>
+<label><input type="checkbox"> Microsoft 365</label>
+<label><input type="checkbox"> Notion</label>
+<label><input type="checkbox"> GitHub</label>
+<label><input type="checkbox"> Dropbox</label>
+</div>
+
+</div>
+
+<div class="question">
+<label>📅 How often do you use cloud tools?</label>
+
+<select>
+<option>Every Day</option>
+<option>Several Times a Week</option>
+<option>Once a Week</option>
+<option>Rarely</option>
+<option>Never</option>
+</select>
+
+</div>
+
+<div class="question">
+<label>⭐ Rate your comfort using cloud collaboration tools (1–5)</label>
+
+<input type="range" min="1" max="5">
+
+</div>
+
+<div class="question">
+<label>💬 Any suggestions or comments?</label>
+
+<textarea rows="5" placeholder="Write your feedback here..."></textarea>
+
+</div>
+
+<div class="buttons">
+<button class="submit" type="submit">🚀 Submit</button>
+<button class="reset" type="reset">🔄 Reset</button>
+</div>
+
+</form>
+
+<div class="footer">
+© 2026 | Designed by <strong>Vedant Malwankar</strong>
+</div>
+
+</div>
+
+</body>
+</html>
